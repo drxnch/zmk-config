@@ -7,7 +7,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = 
+            bindings = <
                 &kp Q   &kp W   &mo 1
                 &kp A   &kp S   &kp D
                 &kp Z   &kp X   &kp C
@@ -16,7 +16,7 @@
         };
 
         bt_layer {
-            bindings = 
+            bindings = <
                 &none           &none           &bootloader
                 &none           &none           &bt BT_CLR
                 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
