@@ -19,6 +19,5 @@
 #
 ---
 include:
-  - board: nice!_nano v1
-  - shield: macropad
-  --
+  - board: nice_nano
+    shield: macropad
