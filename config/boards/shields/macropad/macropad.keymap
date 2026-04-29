@@ -8,12 +8,11 @@
 
         default_layer {
             bindings = 
-                &kp KP_N7   &kp KP_N8   &mo 1
-                &kp KP_N4   &kp KP_N5   &kp KP_N6
-                &kp KP_N1   &kp KP_N2   &kp KP_N3
+                &kp Q   &kp W   &mo 1
+                &kp A   &kp S   &kp D
+                &kp Z   &kp X   &kp C
             >;
-            // Rotate left = volume down, rotate right = volume up
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         bt_layer {
@@ -22,8 +21,7 @@
                 &none           &none           &bt BT_CLR
                 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
             >;
-            // Rotate left = previous track, rotate right = next track
-            sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
     };
 };
