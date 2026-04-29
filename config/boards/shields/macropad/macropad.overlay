@@ -12,14 +12,14 @@
         diode-direction = "col2row";
 
         row-gpios
-            = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-              <&gpio 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-              <&gpio 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+              <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+              <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
         col-gpios
-            = <&gpio 4 GPIO_ACTIVE_HIGH>,
-              <&gpio 5 GPIO_ACTIVE_HIGH>,
-              <&gpio 6 GPIO_ACTIVE_HIGH>;
+            = <&gpio0 31 GPIO_ACTIVE_HIGH>,
+              <&gpio0 29 GPIO_ACTIVE_HIGH>,
+              <&gpio0 2 GPIO_ACTIVE_HIGH>;
     };
 
     default_transform: matrix_transform {
@@ -36,8 +36,8 @@
     encoder: encoder {
         compatible = "alps,ec11";
         label = "ENCODER";
-        a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
         status = "okay";
     };
