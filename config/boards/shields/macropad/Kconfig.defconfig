@@ -1,11 +1,9 @@
 if SHIELD_MACROPAD
+
 config ZMK_KEYBOARD_NAME
     default "macropad"
 
-CONFIG_EC11=y
-CONFIG_EC11_TRIGGER_GLOBAL_THREAD=y
-
-config EC11_TRIGGER_GLOBAL_THREAD
+config EC11
     default y
 
 endif
