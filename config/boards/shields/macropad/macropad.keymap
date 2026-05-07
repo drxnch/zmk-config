@@ -8,14 +8,7 @@
 
         default_layer {
             bindings = <
-                &kp A    &kp B   &kp C &kp D
-            >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN>;
-        };
-
-        bt_layer {
-            bindings = <
-                &none           &none           &none    &none
+                &kp A    &kp B   &kp C  &kp D
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN>;
         };
