@@ -37,7 +37,7 @@
         compatible = "zmk,matrix-transform";
         rows = <4>;
         columns = <1>;
-        map = 
+        map = <
             RC(0,0) RC(1,0) RC(2,0) RC(3,0)
         >;
     };
