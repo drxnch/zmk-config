@@ -10,12 +10,10 @@
         columns = <1>;
         matrix {
             kscan = <&matrix_kscan>;
-            row-offset = <0>;
             column-offset = <0>;
         };
         direct {
             kscan = <&direct_kscan>;
-            row-offset = <3>;
             column-offset = <0>;
         };
     };
