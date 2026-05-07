@@ -15,7 +15,7 @@
 
         bt_layer {
             bindings = <
-                &none           &none           &bootloader             &none
+                &none           &none           &bootloader    &kp F
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN>;
         };
